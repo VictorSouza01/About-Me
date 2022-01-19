@@ -1,0 +1,233 @@
+html{
+    height: 100%;
+}
+
+body{
+    background: #0F1026;
+    height: 100%;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+}
+#Menu{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+    position: fixed;
+    bottom: 0%;
+    top: 0%;
+    left: 0%;
+    width: 290px;
+    background-color: #131212;
+
+}
+.navbar{
+    position: absolute;
+    top: 50%;
+    margin-top: -100px;
+
+    width: 200px;
+    height: 340px;
+    list-style: none;
+}
+.btnMenu{
+    position: absolute;
+    text-align: center;
+    width: 250px;
+    color: rgba(255, 255, 255, 0.616);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+.btnMenu:hover{
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+#img_perfil{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    margin-left: -60px;
+    margin-top: -150px;
+    width: 170px;
+    border-radius: 10px;
+    border: 3px solid #4973F2;
+}
+.navItem{
+    position: absolute;
+    width: 250px;
+    height: 20px;
+    left: 0%;
+    margin-left: 25px;
+}
+.Sections{
+    margin-left: 350px;
+    margin-right: 50px;
+    position: relative;
+    height: 95%;
+    min-height: 95%;
+    width: auto;
+    top: 0%;
+    left: 0%;
+    background: #131212;
+    border-radius: 10px;
+    margin-top: 50px;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+#SectionInicio{
+    margin-top: 20px;
+}
+
+
+
+#IdiomasD{
+    position: absolute;
+    top: 20%;
+    margin-top: 380px;
+    left: 5%;
+    margin-left: 0px;
+}
+.ListaIdioma{
+    list-style-type: none;
+    font-weight: normal;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+}
+#SubTituloIdiomas{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    margin-left: 0px;
+    margin-top: 350px;
+
+}
+#SubTituloHabilidades{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    margin-top: 150px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+}
+.IconsFeL{
+    width: 45px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+#LinguagensEFerramentas{
+    position: absolute;
+    top: 20%;
+    left: 4%;
+    margin-left: 0px;
+    margin-top: 200px;
+
+}
+#ProjetosDiv{
+    word-wrap: break-word;
+    position: absolute;
+    width: 80%;
+    top: 10%;
+    left: 5%;
+    margin-top: 180px;
+}
+
+.ListaProjetos{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+    color: white;
+    line-height: 40px;
+    font-weight: normal;
+    font-size: 20px;
+}
+.ListaProjetos a{
+    color: #F2911B;
+}
+.TituloSection{
+    font-family: 'Segoe UI'!important;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    font-size:40px;
+    font-weight: bolder;
+    width: 380px;
+    height: 45px;
+    margin-left: 0px;
+    margin-top: 70px;
+    color: white;
+    letter-spacing: -1px;
+}
+#SocialIcon{
+    position: absolute;
+    
+    width: 260px;
+  
+    top: 50%;
+    left: 0%;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+#IconGitHub{
+    background-color: white;
+    border-radius: 100px;
+}
+.IconImg{
+    margin-left: 15px;
+    width: 43px;
+}
+.IconImg:hover{
+    width: 45px;
+    margin-top: -04px;
+}
+#TituloNome{
+    font-family: 'Segoe UI'!important;
+    text-decoration: underline;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    font-size:40px;
+    font-weight: bolder;
+    width: 420px;
+    height: 45px;
+    margin-left: 0px;
+    margin-top: -40px;
+    color: white;
+    letter-spacing: 2px;
+}
+#SubTitulo{
+    position: absolute;
+    color: #F2911B;
+    top: 40%;
+    left: 10%;
+    font-size: 25px;
+    font-weight: bold;
+    width: 355px;
+    height: 45px;
+    margin-left: 150px;
+    margin-top: 15px;
+}
+#InicioSpan{
+    top: 50%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 50px;
+
+}
+.Astyle{
+    text-decoration: underline;
+    color: #4973F2;
+}
+#CentralFormacoes{
+    position: relative;
+    top: 20%;
+    left: 5%;
+    margin-top: 100px;
+    margin-left: 00px;
+}
+.SubTituloFormacao{
+    font-size: 23px;
+}
+.DescricaoFormacao{
+    font-weight: 500;
+}
+.IconsFeL{
+    cursor: pointer;
+}
