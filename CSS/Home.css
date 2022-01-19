@@ -231,3 +231,25 @@ body{
 .IconsFeL{
     cursor: pointer;
 }
+.PExperiencia{
+    text-align: left;
+    letter-spacing: 0.2px;
+    line-height: 25px;
+    font-size: 18px;
+    width: 70%;
+}
+.TituloProject{
+    font-size: 26px;
+}
+#AboutEvo{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    margin-top: 150px;
+}
+#TituloEvo{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    margin-top: 100px;
+}
