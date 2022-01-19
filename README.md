@@ -1,2 +1,2 @@
 # About me
-Web site abou me.
+Web site about me.
