@@ -20,3 +20,33 @@ function getScrollTopByHref(element){
     const id = element.getAttribute('href');
     return document.querySelector(id).offsetTop;
 }
+
+
+//Evento que verifica o tamanho da janela para que posso corrigir o bug do evento de dropdown
+window.addEventListener('resize', function(){
+    var largura = window.innerWidth
+    || document.documentElement.clientWidth
+    || document.body.clientWidth;
+    
+    
+    if (largura > 850){
+        document.getElementById("NavBarId").style.display = "block";
+    }
+    else{
+        document.getElementById("NavBarId").style.display = "none";
+    }
+});
+
+//Evento de dropdown
+$(document).ready(function() {
+    var botao = $('.Nav-button');
+    var dropDown = $('.navbar');  
+
+
+    
+    botao.on('click', function(event){
+        dropDown.stop(true,true).slideToggle();
+        event.stopPropagation();
+    });
+    
+});
