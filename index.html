@@ -6,10 +6,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Victor de Souza</title>
         <link rel="stylesheet" href="CSS/Home.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
     </head>
     <body>
         <nav id="Menu" class="menu">
-            <ul class="navbar">
+            <button type="button" class="Nav-button" onclick="MenuOpen()">
+                <img src="IMG/NavIcon.png" class="ImgButton">
+            </button>
+
+            <ul class="navbar" id="NavBarId">
                 <img src="IMG/FotoPerfil2.jpg" id="img_perfil">
                 <li class="navItem">
                     <a id="btn_inicio" class="btnMenu" href="#SectionInicio">INICIO</a>
@@ -61,7 +68,6 @@
                 Projeto desenvolvido para a faculdade como trabalho de segundo semestre, neste projeto é usado um CRUD (Create, Read, Update, Delete) para fazer alterações no banco de dados (SQL Server),
                 a linguagem utilizada foi Visual Basic, com o Framework .Net. Programa desenvolvido para uma empresa fictícia que vende produtos eletrônicos.
             </p>
-
         </section>
 
         <section class="Sections" id="SectionProjetos">
