@@ -4,6 +4,24 @@ html{
 .Nav-button{
     display: none;
 }
+.Nav-ThemeButton{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-top: 150px;
+    margin-left: -37px;
+    border: none;
+    background:none;
+    border-radius: 50px;
+}
+.ThemeButton{
+    cursor: pointer;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.26);
+    border: 2px solid white;
+    border-radius: 50px;
+}
+
 body{
     background: #0F1026;
     height: 100%;
@@ -18,14 +36,14 @@ body{
     left: 0%;
     width: 290px;
     background-color: #131212;
-
 }
+
 .navbar{
     position: absolute;
     top: 50%;
     margin-top: -100px;
     width: 200px;
-    height: 340px;
+    height: 200px;
     list-style: none;
     display: block;
 }
@@ -170,6 +188,8 @@ body{
 .IconImg{
     margin-left: 15px;
     width: 43px;
+    border-radius: 10px;
+
 }
 .IconImg:hover{
     transition:.2s;
@@ -294,8 +314,27 @@ body{
         height: 200px;
         list-style: none;
         display: none;
-
     }
+    
+    .Nav-ThemeButton{
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        margin-top: -20px;
+        margin-left: 0px;
+        border: none;
+        background:none;
+        border-radius: 50px;
+    }
+    .ThemeButton{
+        cursor: pointer;
+        padding: 5px;
+        width: 25px;
+        background-color: rgba(255, 255, 255, 0.26);
+        border: 2px solid white;
+        border-radius: 50px;
+    }
+    
 
     .btnMenu{
         position: absolute;
@@ -374,8 +413,6 @@ body{
         margin-top: 100px;
         margin-left: 0px;
     }
-
-
 }
 
 @media screen and (max-width: 1000px){
@@ -425,8 +462,6 @@ body{
     }
 
 }
-
-
 
 @media screen and (max-height: 745px){
     #ProjetosTitulo{
