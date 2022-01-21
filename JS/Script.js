@@ -21,7 +21,6 @@ function getScrollTopByHref(element){
     return document.querySelector(id).offsetTop;
 }
 
-
 //Evento que verifica o tamanho da janela para que posso corrigir o bug do evento de dropdown
 window.addEventListener('resize', function(){
     var largura = window.innerWidth
@@ -48,7 +47,7 @@ $(document).ready(function() {
     });
 });
 
-
+//Evento para fechar o dropdown após o clique no item.
 $(document).ready(function() {
     var botao = $('.btnMenu');
     var dropDown = $('.navbar');
@@ -64,6 +63,46 @@ $(document).ready(function() {
         else{
         dropDown.stop(true,true).slideToggle();
         event.stopPropagation();
+        }
+    });
+});
+
+//Função para o botão do tema
+$(document).ready(function(){
+    var botao = $('.ThemeButton')
+    var tema = "Escuro"
+    botao.on('click', function(event){
+        
+
+        if (tema == "Escuro"){
+            document.getElementById("IdImgTheme").src="../IMG/LightOff.png";
+            document.getElementById("SubTitulo").style.color="#2b2318";
+            
+            let AllAstyle = document.querySelectorAll(".Astyle");
+            for (let index = 0; index < AllAstyle.length; index++){
+                AllAstyle[index].style.color = "#78b3a4";
+            }
+
+            document.body.style.background="#e9f2f9";
+            let AllSection = document.querySelectorAll(".Sections");
+            for (let index = 0; index < AllSection.length; index++){
+                AllSection[index].style.background = "#736C63";
+            }
+            tema="Claro"
+        }
+        else if(tema == "Claro"){
+            document.getElementById("IdImgTheme").src="../IMG/LightOn.png";
+            document.body.style.background="#0F1026";
+            document.getElementById("SubTitulo").style.color="#F2911B";
+            let AllAstyle = document.querySelectorAll(".Astyle");
+            for (let index = 0; index < AllAstyle.length; index++){
+                AllAstyle[index].style.color = "#4973F2";
+            }
+            let AllSection = document.querySelectorAll(".Sections");
+            for (let index = 0; index < AllSection.length; index++){
+                AllSection[index].style.background = "#131212";
+            }
+            tema="Escuro"
         }
     });
 });
