@@ -42,11 +42,28 @@ $(document).ready(function() {
     var botao = $('.Nav-button');
     var dropDown = $('.navbar');  
 
-
-    
     botao.on('click', function(event){
         dropDown.stop(true,true).slideToggle();
         event.stopPropagation();
     });
-    
+});
+
+
+$(document).ready(function() {
+    var botao = $('.btnMenu');
+    var dropDown = $('.navbar');
+
+    botao.on('click', function(event){
+        var largura = window.innerWidth
+        || document.documentElement.clientWidth
+        || document.body.clientWidth;
+
+        if (largura > 850){
+            document.getElementById("NavBarId").style.display = "block";
+        }
+        else{
+        dropDown.stop(true,true).slideToggle();
+        event.stopPropagation();
+        }
+    });
 });
