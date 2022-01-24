@@ -85,7 +85,7 @@ $(document).ready(function(){
         
 
         if (tema == "Escuro"){
-            document.getElementById("IdImgTheme").src="../IMG/LightOff.png";
+            document.getElementById("IdImgTheme").src="IMG/LightOff.png";
             document.getElementById("SubTitulo").style.color="#2b2318";
             
             let AllAstyle = document.querySelectorAll(".Astyle");
@@ -101,7 +101,7 @@ $(document).ready(function(){
             tema="Claro"
         }
         else if(tema == "Claro"){
-            document.getElementById("IdImgTheme").src="../IMG/LightOn.png";
+            document.getElementById("IdImgTheme").src="IMG/LightOn.png";
             document.body.style.background="#0F1026";
             document.getElementById("SubTitulo").style.color="#F2911B";
             let AllAstyle = document.querySelectorAll(".Astyle");
