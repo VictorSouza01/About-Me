@@ -6,15 +6,25 @@ menuItems.forEach(item => {
 })
 function scrollToIdOnClick(event){//Função para pegar o ID no click
     event.preventDefault();
-    const to = getScrollTopByHref(event.target) - 30;
-    
+        const to = getScrollTopByHref(event.target);  
     scrollToPosition(to);
 }
 function scrollToPosition(to){//Função para mover suavemente até o ID escolhido
-    window.scroll({
-        top: to,
-        behavior:"smooth", 
-    });
+    var largura = window.innerWidth
+    || document.documentElement.clientWidth
+    || document.body.clientWidth;
+    if (largura < 850){
+        window.scroll({
+            top: to - 50,
+            behavior:"smooth", 
+        });
+    }
+    else{
+        window.scroll({
+            top: to - 30,
+            behavior:"smooth", 
+        });
+    }
 }
 function getScrollTopByHref(element){
     const id = element.getAttribute('href');
@@ -75,7 +85,7 @@ $(document).ready(function(){
         
 
         if (tema == "Escuro"){
-            document.getElementById("IdImgTheme").src="IMG/LightOff.png";
+            document.getElementById("IdImgTheme").src="../IMG/LightOff.png";
             document.getElementById("SubTitulo").style.color="#2b2318";
             
             let AllAstyle = document.querySelectorAll(".Astyle");
@@ -91,7 +101,7 @@ $(document).ready(function(){
             tema="Claro"
         }
         else if(tema == "Claro"){
-            document.getElementById("IdImgTheme").src="IMG/LightOn.png";
+            document.getElementById("IdImgTheme").src="../IMG/LightOn.png";
             document.body.style.background="#0F1026";
             document.getElementById("SubTitulo").style.color="#F2911B";
             let AllAstyle = document.querySelectorAll(".Astyle");
