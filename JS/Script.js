@@ -79,11 +79,10 @@ $(document).ready(function() {
 
 //Função para o botão do tema
 $(document).ready(function(){
-    var botao = $('.ThemeButton')
+    var botao = $('.Nav-ThemeButton')
     var tema = "Escuro"
     botao.on('click', function(event){
         
-
         if (tema == "Escuro"){
             document.getElementById("IdImgTheme").src="IMG/LightOff.png";
             document.getElementById("SubTitulo").style.color="#2b2318";
