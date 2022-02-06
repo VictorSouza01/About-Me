@@ -4,6 +4,7 @@ html{
 .Nav-button{
     display: none;
 }
+
 .Nav-ThemeButton{
     position: relative;
     top: 50%;
@@ -18,8 +19,11 @@ html{
     cursor: pointer;
     padding: 5px;
     background-color: rgba(255, 255, 255, 0.26);
-    border: 2px solid white;
+    border: 2px solid rgb(197, 189, 189);
     border-radius: 50px;
+}
+.ThemeButton:hover{
+    border: 2px solid white;
 }
 
 body{
@@ -66,7 +70,7 @@ body{
     top: 0%;
     left: 50%;
     margin-left: -60px;
-    margin-top: -150px;
+    margin-top: -200px;
     width: 170px;
     border-radius: 10px;
     border: 3px solid #4973F2;
@@ -377,7 +381,7 @@ body{
         text-overflow: ellipsis; 
     }
     #SectionInicio{
-        margin-top: 80px;
+        margin-top: 70px;
     }
     #TituloNome{
         font-family: 'Segoe UI'!important;
