@@ -41,7 +41,6 @@ body{
     width: 290px;
     background-color: #131212;
 }
-
 .navbar{
     position: absolute;
     top: 50%;
@@ -101,8 +100,6 @@ body{
 #SectionInicio{
     margin-top: 20px;
 }
-
-
 
 #IdiomasD{
     position: absolute;
@@ -196,7 +193,6 @@ body{
     margin-left: 15px;
     width: 43px;
     border-radius: 10px;
-
 }
 .IconImg:hover{
     transition:.2s;
@@ -238,7 +234,6 @@ body{
     font-weight: bold;
     font-size: 18px;
     margin-left: 50px;
-
 }
 .Astyle{
     text-decoration: underline;
@@ -283,7 +278,6 @@ body{
     margin-top: 100px;
 }
 
-
 /* Para mobile => */
 
 @media screen and (max-width: 850px){
@@ -310,7 +304,6 @@ body{
         width: 100%;
         background-color: #131212;
     }
-
     .navbar{    
         position: absolute;
         top: 100%;
@@ -321,7 +314,6 @@ body{
         list-style: none;
         display: none;
     }
-    
     .Nav-ThemeButton{
         position: absolute;
         top: 50%;
@@ -340,8 +332,6 @@ body{
         border: 2px solid white;
         border-radius: 50px;
     }
-    
-
     .btnMenu{
         position: absolute;
         text-align: center;
@@ -434,6 +424,41 @@ body{
         font-weight: normal;
         font-size: 15px;
     }
+    .PExperiencia{
+        text-align: left;
+        letter-spacing: 0.2px;
+        line-height: 25px;
+        font-size: 15px;
+        width: 70%;
+    }
+    .TituloSection{
+        font-family: 'Segoe UI'!important;
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        font-size:30px;
+        font-weight: bolder;
+        width: 380px;
+        height: 45px;
+        margin-left: 0px;
+        margin-top: 70px;
+    }
+    #SubTituloHabilidades{
+        position: absolute;
+        width: 90%;
+        font-size: 18px;
+        top: 20%;
+        left: 5%;
+        margin-top: 150px;
+    }
+    .IconsFeL{
+        width: 38px;
+        margin-top: 5px;
+        margin-left: 10px;
+        background-color: rgba(0, 0, 0, 0.726);
+        padding: 4px;
+        border-radius: 17px;
+    }
 }
 
 @media screen and (max-width: 1000px){
@@ -474,8 +499,6 @@ body{
         margin-left: 50px;
         margin-left: 30px;
     }
-
-
 }
 
 @media screen and (max-height: 745px){
