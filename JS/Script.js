@@ -59,10 +59,14 @@ $(document).ready(function() {
     //evento para caso clique fora do menu...
     $(document).click(function(e) {
         var target = e.target;
+        var largura = window.innerWidth
+        || document.documentElement.clientWidth
+        || document.body.clientWidth;
+
         $('.navbar').each(function() {
             var $this = $(this);
             var dropdown = $this.prev('.Nav-button');
-            if (dropdown[0] != target){
+            if (dropdown[0] != target && largura < 850){
                 $(this).hide();
             };
         });
