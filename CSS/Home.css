@@ -23,7 +23,9 @@ html{
     border-radius: 50px;
 }
 .ThemeButton:hover{
+    transition:.5s;
     border: 2px solid white;
+    box-shadow:0 0 0.8em rgba(255, 255, 255, 0.719);
 }
 body{
     background: #0F1026;
